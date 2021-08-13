@@ -1,0 +1,8 @@
+#home{
+height: 650 px;  
+    color: #fff;
+    background-image: url("../../assets/home2.jpg");  
+    background-size: 100vh ;  
+    background-size: cover; 
+    height: 100vh; 
+}

@@ -1,0 +1,29 @@
+<app-menu></app-menu>
+<div id="home">
+<div class="container text-center pt-5">
+    <h2>Project details</h2>
+    <div class="container pt-3">
+    <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Project Name</label>
+          <input type="text" class="form-control pt-2" placeholder="Enter Project Name" [(ngModel)]="projectName" required="please enter" [ngModelOptions]="{standalone: true}">
+        </div>
+        <div class="form-group">
+          <label for="ProjectMangerName">Project Manager Name</label>
+          <input type="text" class="form-control pt-1" placeholder="Enter project Manger Name" [(ngModel)]="projectMangerName" required [ngModelOptions]="{standalone: true}">
+        </div>
+        <div class="form-group">
+          <label class="form-check-label" for="exampleCheck1">Application Owner</label>
+          <input type="text" class="form-control pt-2" placeholder="Application Owner" [(ngModel)]="applicationOwner" required [ngModelOptions]="{standalone: true}">
+        </div>
+        <div class="form-group">
+            <label class="form-check-label" for="exampleCheck1">AuditType(SOX/Internal)</label>
+            <input type="text" class="form-control pt-2" placeholder="Internal/SOX" [(ngModel)]="aType" required [ngModelOptions]="{standalone: true}">
+          </div>
+        <button type="submit" class="btn btn-primary" (click)="getCheckListQuestions()">Submit</button>
+        <h2 *ngIf="isNotValid">Please Enter All the details</h2>
+      </form>
+
+    </div>
+</div>
+</div>

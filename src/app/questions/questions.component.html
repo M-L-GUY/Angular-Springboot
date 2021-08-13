@@ -1,0 +1,96 @@
+<app-menu></app-menu>
+<!-- <div class="container text-center">
+    <div class="">
+        <h2 class="mt-5">{{auditType.auditType}}</h2>
+        <div class="card">
+            <div class="card-body">
+            <p>{{questionsData[0].question}}</p>
+            <input type="radio" name="yes" id="Yes" value="yes">Yes
+            <input type="radio" name="yes"  id="No" value="yes">NO
+        </div>
+        </div>
+    </div>
+</div> -->
+<div class="container box" >
+    <div class="row col-md-7 col-md-offset-2 custyle">
+        <fieldset>
+            <legend class="text-center">{{auditType.auditType}} Audit Questions</legend>
+            <table class="table table-striped custab">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <!-- <th>Name</th> -->
+                        <th>Question</th>
+                        <th>Response</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>{{questionsData[0].question}}</td>
+                        <td>
+                            <select id="response" name="response" [(ngModel)]="questionsData[0].response" required>
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>{{questionsData[1].question}}</td>
+                        <td>
+                            <select id="response" name="response" [(ngModel)]="questionsData[1].response" required>
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>{{questionsData[2].question}}</td>
+                        <td>
+                            <select id="response" name="response" [(ngModel)]="questionsData[2].response" required>
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>{{questionsData[3].question}}</td>
+                        <td>
+                            <select id="response" name="response" [(ngModel)]="questionsData[3].response" required>
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>{{questionsData[4].question}}</td>
+                        <td>
+                            <select id="response" name="response" [(ngModel)]="questionsData[4].response" required>
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+                <!-- (click)="getAuditType()" -->
+                <!-- [routerLink]="['/']" -->
+                <!-- [routerLink]="['/getresult']" -->
+            </table>
+            <div class="form-group text-center">
+                <input class="btn btn-success" type="button" name="back" value="Back" [routerLink]="['/home']">
+                &nbsp;&nbsp;
+                <input class="btn btn-success" type="submit" name="submit_reg" value="Submit" (click)="showResponse()">
+            </div>
+            </fieldset>
+            </div>
+            </div>
+            
