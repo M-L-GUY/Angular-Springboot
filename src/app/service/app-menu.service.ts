@@ -7,7 +7,7 @@ export class AppMenuService {
   athome:boolean=false;
   atquestions:boolean=false;
   atstatus:boolean=false;
-
+  atlogout:boolean=false;
   constructor() { }
   atHome(bool:boolean)
   {
@@ -20,6 +20,10 @@ export class AppMenuService {
   atStatus(bool:boolean)
   {
     this.atstatus=bool;
+  }
+  atLogout(bool:boolean)
+  {
+    this.atlogout=bool;
   }
 
 }

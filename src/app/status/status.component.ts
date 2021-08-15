@@ -28,6 +28,7 @@ export class StatusComponent implements OnInit {
   ngOnInit(): void {
     this.appMenuService.atHome(true);
     this.appMenuService.atQuestions(true);
+    this.appMenuService.atLogout(true);
     let obj:any=localStorage.getItem("AuditResponse");
     this.auditResponse=JSON.parse(obj);
     console.log(this.auditResponse);

@@ -65,6 +65,7 @@ export class QuestionsComponent implements OnInit {
   ngOnInit(): void {
     this.appMenuService.atHome(true);
     this.appMenuService.atQuestions(false);
+    this.appMenuService.atLogout(true);
     //this.appMenuService.atStatus(true);
     //console.log(this.questionService.returnListDatafromHome());
     this.myObject=localStorage.getItem("auditType");
